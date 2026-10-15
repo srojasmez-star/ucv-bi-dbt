@@ -1,15 +1,21 @@
-Welcome to your new dbt project!
+# Laboratorio 07 - Gold, KPIs y OLAP
 
-### Using the starter project
+Implementación de la capa Gold con dbt.
 
-Try running the following commands:
-- dbt run
-- dbt test
+Modelos incluidos:
 
+- dim_date
+- dim_product
+- dim_customer
+- dim_store
+- fact_sales
+- kpi_sales_monthly
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Validaciones realizadas:
+
+- tests de not_null
+- tests de unique
+- tests de relationships
+- KPI mensual
+- operaciones OLAP: Slice, Dice, Drill-down y Roll-up
+- lineage Bronze → Silver → Gold
